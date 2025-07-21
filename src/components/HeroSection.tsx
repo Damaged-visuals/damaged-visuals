@@ -17,19 +17,6 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 text-center">
-        {/* Services Tags */}
-        <div className="mb-8 flex flex-wrap justify-center gap-4">
-          <span className="px-4 py-2 bg-secondary/50 backdrop-blur-sm rounded-full text-sm text-accent border border-accent/20">
-            3D Animation
-          </span>
-          <span className="px-4 py-2 bg-secondary/50 backdrop-blur-sm rounded-full text-sm text-accent border border-accent/20">
-            Motion Graphics
-          </span>
-          <span className="px-4 py-2 bg-secondary/50 backdrop-blur-sm rounded-full text-sm text-accent border border-accent/20">
-            Visual Effects
-          </span>
-        </div>
-
         {/* Main Heading */}
         <div className="relative mb-8">
           <h1 className="font-heading font-black text-8xl md:text-9xl lg:text-[12rem] leading-none">
@@ -44,15 +31,15 @@ const HeroSection = () => {
           {/* Overlapping Text */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-20">
             <span className="font-heading font-black text-6xl md:text-8xl text-primary whitespace-nowrap">
-              ANIMATION STUDIO
+              3D ANIMATION AGENCY
             </span>
           </div>
         </div>
 
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in" style={{animationDelay: '0.4s'}}>
-          We create cutting-edge visual experiences that push the boundaries of imagination. 
-          From concept to completion, we bring your wildest ideas to life.
+          We create crazy 3d visuals for brands and creators. 
+          <span className="text-accent font-bold"> Let's damage your screens!</span>
         </p>
 
         {/* CTA Buttons */}
@@ -61,7 +48,7 @@ const HeroSection = () => {
             size="lg" 
             className="bg-gradient-primary shadow-neon hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 group"
           >
-            View Our Work
+            WORK WITH US!
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
           </Button>
           

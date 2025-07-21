@@ -2,7 +2,9 @@ import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import StatsSection from '@/components/StatsSection';
 import ServicesSection from '@/components/ServicesSection';
-import PortfolioSection from '@/components/PortfolioSection';
+import ClientsSection from '@/components/ClientsSection';
+import ReviewsSection from '@/components/ReviewsSection';
+import PricingSection from '@/components/PricingSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -12,7 +14,9 @@ const Index = () => {
       <HeroSection />
       <StatsSection />
       <ServicesSection />
-      <PortfolioSection />
+      <ClientsSection />
+      <ReviewsSection />
+      <PricingSection />
       <Footer />
     </div>
   );

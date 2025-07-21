@@ -4,39 +4,27 @@ import studioWorkflow from '@/assets/studio-workflow.jpg';
 
 const services = [
   {
-    icon: Film,
-    title: "3D Animation",
-    description: "Character animation, product visualization, and cinematic sequences that captivate audiences.",
-    image: abstractMotion
-  },
-  {
     icon: Zap,
-    title: "Motion Graphics",
-    description: "Dynamic text animations, logo reveals, and graphic elements that enhance your brand story.",
-    image: studioWorkflow
-  },
-  {
-    icon: Sparkles,
-    title: "Visual Effects",
-    description: "Compositing, particle systems, and digital environments that bring impossible to life.",
+    title: "BRAND ADS",
+    description: "High-impact 3D commercials and promotional content that elevate your brand presence.",
     image: abstractMotion
   },
   {
-    icon: Palette,
-    title: "Art Direction",
-    description: "Creative vision and aesthetic guidance to ensure your project stands out from the crowd.",
+    icon: Film,
+    title: "STREAM INTROS",
+    description: "Custom animated intros and overlays that make your streams stand out from the crowd.",
     image: studioWorkflow
   },
   {
     icon: Monitor,
-    title: "Post Production",
-    description: "Color grading, sound design, and final polish to deliver broadcast-ready content.",
+    title: "PRODUCT VISUALIZATION",
+    description: "Stunning 3D product renders and animations that showcase your products in their best light.",
     image: abstractMotion
   },
   {
-    icon: Globe,
-    title: "Digital Campaigns",
-    description: "Full-service creative campaigns optimized for social media and digital platforms.",
+    icon: Palette,
+    title: "CREATIVE DIRECTION",
+    description: "From concept to completion - we handle the entire creative process for your project.",
     image: studioWorkflow
   }
 ];
@@ -59,16 +47,13 @@ const ServicesSection = () => {
           </div>
           
           <h2 className="font-heading font-black text-5xl md:text-7xl mb-6">
-            <span className="bg-gradient-text bg-clip-text text-transparent">
-              What We
-            </span>
+            <span className="text-foreground">LET'S DAMAGE</span>
             <br />
-            <span className="text-foreground">Create</span>
+            <span className="bg-gradient-text bg-clip-text text-transparent">YOUR SCREENS!</span>
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            From concept to completion, we specialize in creating visual experiences 
-            that push creative boundaries and deliver measurable results.
+            From creative direction to delivery - we bring your wildest 3D visions to life.
           </p>
         </div>
 

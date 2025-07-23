@@ -65,7 +65,7 @@ const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-gradient-primary shadow-neon hover:shadow-glow transition-all duration-300 text-lg py-6 group"
-              onClick={() => window.open('https://instagram.com/direct/t/', '_blank')}
+              onClick={() => window.open('https://instagram.com/direct/t/damagedvisuals/', '_blank')}
             >
               WORK WITH US!
               <Zap className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
@@ -106,7 +106,7 @@ const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-gradient-primary shadow-neon hover:shadow-glow transition-all duration-300 text-lg py-6 group"
-              onClick={() => window.open('https://instagram.com/direct/t/', '_blank')}
+              onClick={() => window.open('https://instagram.com/direct/t/damagedvisuals/', '_blank')}
             >
               WORK WITH US!
               <Zap className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
@@ -148,7 +148,7 @@ const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-gradient-primary shadow-neon hover:shadow-glow transition-all duration-300 text-lg py-6 group"
-              onClick={() => window.open('https://instagram.com/direct/t/', '_blank')}
+              onClick={() => window.open('https://instagram.com/direct/t/damagedvisuals/', '_blank')}
             >
               WORK WITH US!
               <Zap className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
@@ -189,7 +189,7 @@ const PricingSection = () => {
             <Button 
               size="lg" 
               className="w-full bg-gradient-primary shadow-neon hover:shadow-glow transition-all duration-300 text-lg py-6 group"
-              onClick={() => window.open('https://instagram.com/direct/t/', '_blank')}
+              onClick={() => window.open('https://instagram.com/direct/t/damagedvisuals/', '_blank')}
             >
               WORK WITH US!
               <Zap className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />

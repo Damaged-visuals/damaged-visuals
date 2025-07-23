@@ -5,18 +5,21 @@ const ClientsSection = () => {
   const clients = [
     {
       title: "FANUM X WLTS BRAND AD",
-      description: "High-energy 3D brand commercial featuring dynamic motion graphics and explosive visual effects",
-      image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop"
+      description: "High-energy short 3D brand ad for Fanum & WLTS \"IT'S HEAVY\" now sold out t-shirts",
+      image: "https://www.instagram.com/reel/DLuB9KBozoy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      isInstagram: true
     },
     {
       title: "KLAW STREAM INTRO",
-      description: "Custom animated intro with glitch effects and cyberpunk aesthetic for gaming content",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop"
+      description: "Fast paced animated stream intro for Kyle Lawyer",
+      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
+      isComingSoon: true
     },
     {
       title: "GO-CRZY POP-UP AD",
-      description: "Bold 3D product visualization with eye-catching animations for social media campaign",
-      image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=800&h=600&fit=crop"
+      description: "Insane pop-up ad for Go-Crzy's Paris Pop-up",
+      image: "https://www.instagram.com/reel/DHf9g9dIjnC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      isInstagram: true
     }
   ];
 
@@ -57,20 +60,38 @@ const ClientsSection = () => {
             >
               {/* Image */}
               <div className="relative overflow-hidden h-64">
-                <img 
-                  src={client.image} 
-                  alt={client.title}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
+                {client.isComingSoon ? (
+                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-4xl font-heading font-black text-primary mb-2">COMING</div>
+                      <div className="text-4xl font-heading font-black text-accent">SOON</div>
+                    </div>
+                  </div>
+                ) : (
+                  <img 
+                    src={client.image} 
+                    alt={client.title}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  />
+                )}
                 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                 
-                {/* Play Button */}
+                {/* Play Button or Instagram Link */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  <div className="w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <Play className="w-6 h-6 text-primary ml-1" />
-                  </div>
+                  {client.isInstagram ? (
+                    <div 
+                      className="w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 cursor-pointer"
+                      onClick={() => window.open(client.image, '_blank')}
+                    >
+                      <ArrowUpRight className="w-6 h-6 text-primary" />
+                    </div>
+                  ) : !client.isComingSoon && (
+                    <div className="w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <Play className="w-6 h-6 text-primary ml-1" />
+                    </div>
+                  )}
                 </div>
               </div>
 

@@ -1,7 +1,7 @@
 const StatsSection = () => {
   const stats = [
-    { number: "30+", text: "videos created for brands and creators" },
-    { number: "10+", text: "clients worldwide" },
+    { number: "40+", text: "videos created for brands and creators" },
+    { number: "20+", text: "clients worldwide" },
     { number: "5+", text: "years experience" }
   ];
 

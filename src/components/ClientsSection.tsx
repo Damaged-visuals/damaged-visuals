@@ -19,7 +19,8 @@ const ClientsSection = () => {
     {
       title: "GO-CRZY POP-UP AD",
       description: "Insane pop-up ad for Go-Crzy's Paris Pop-up",
-      image: "https://www.instagram.com/reel/DHf9g9dIjnC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      thumbnail: "/lovable-uploads/b9d2d453-d8d3-4397-98ed-348c8c033d34.png",
+      instagramLink: "https://www.instagram.com/reel/DHf9g9dIjnC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       isInstagram: true
     }
   ];

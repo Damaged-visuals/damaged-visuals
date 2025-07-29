@@ -6,7 +6,8 @@ const ClientsSection = () => {
     {
       title: "FANUM X WLTS BRAND AD",
       description: "High-energy short 3D brand ad for Fanum & WLTS \"IT'S HEAVY\" now sold out t-shirts",
-      image: "https://www.instagram.com/reel/DLuB9KBozoy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      thumbnail: "/lovable-uploads/874e6d06-4153-48dc-a552-a75e9dc9c993.png",
+      instagramLink: "https://www.instagram.com/reel/DLuB9KBozoy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       isInstagram: true
     },
     {
@@ -69,7 +70,7 @@ const ClientsSection = () => {
                   </div>
                 ) : (
                   <img 
-                    src={client.image} 
+                    src={client.thumbnail || client.image} 
                     alt={client.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />
@@ -83,7 +84,7 @@ const ClientsSection = () => {
                   {client.isInstagram ? (
                     <div 
                       className="w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 cursor-pointer"
-                      onClick={() => window.open(client.image, '_blank')}
+                      onClick={() => window.open(client.instagramLink || client.image, '_blank')}
                     >
                       <ArrowUpRight className="w-6 h-6 text-primary" />
                     </div>

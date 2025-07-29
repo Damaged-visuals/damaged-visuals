@@ -4,7 +4,8 @@ import StatsSection from '@/components/StatsSection';
 import ServicesSection from '@/components/ServicesSection';
 import ClientsSection from '@/components/ClientsSection';
 import ReviewsSection from '@/components/ReviewsSection';
-import PricingSection from '@/components/PricingSection';
+import StreamerPricingSection from '@/components/StreamerPricingSection';
+import ClothingBrandsPricingSection from '@/components/ClothingBrandsPricingSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -16,7 +17,8 @@ const Index = () => {
       <ServicesSection />
       <ClientsSection />
       <ReviewsSection />
-      <PricingSection />
+      <StreamerPricingSection />
+      <ClothingBrandsPricingSection />
       <Footer />
     </div>
   );

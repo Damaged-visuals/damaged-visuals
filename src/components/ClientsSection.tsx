@@ -110,6 +110,17 @@ const ClientsSection = () => {
             </div>
           ))}
         </div>
+
+        {/* Explore Other Works Button */}
+        <div className="text-center mt-16">
+          <Button 
+            size="lg"
+            className="bg-gradient-primary text-lg px-12 py-6 shadow-neon hover:shadow-neon-intense transition-all duration-300"
+            onClick={() => window.open('https://instagram.com/damagedvisuals', '_blank')}
+          >
+            EXPLORE OTHER WORKS
+          </Button>
+        </div>
       </div>
     </section>
   );

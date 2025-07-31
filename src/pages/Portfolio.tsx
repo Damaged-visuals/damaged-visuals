@@ -1,5 +1,5 @@
 import Navigation from '@/components/Navigation';
-import PortfolioSection from '@/components/PortfolioSection';
+import ClientsSection from '@/components/ClientsSection';
 import Footer from '@/components/Footer';
 
 const Portfolio = () => {
@@ -7,7 +7,7 @@ const Portfolio = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <div className="pt-20">
-        <PortfolioSection />
+        <ClientsSection />
       </div>
       <Footer />
     </div>

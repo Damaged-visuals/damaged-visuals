@@ -18,16 +18,17 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#work" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">
               Our Work
             </a>
-            <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+            <a href="/services" className="text-muted-foreground hover:text-primary transition-colors">
               Services
             </a>
-            <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
-              About
-            </a>
-            <Button variant="default" className="bg-gradient-primary shadow-neon">
+            <Button 
+              variant="default" 
+              className="bg-gradient-primary shadow-neon"
+              onClick={() => window.open('https://instagram.com/damagedvisuals', '_blank')}
+            >
               Contact
             </Button>
           </div>
@@ -49,16 +50,17 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-border">
             <div className="flex flex-col space-y-4 pt-4">
-              <a href="#work" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="/portfolio" className="text-muted-foreground hover:text-primary transition-colors">
                 Our Work
               </a>
-              <a href="#services" className="text-muted-foreground hover:text-primary transition-colors">
+              <a href="/services" className="text-muted-foreground hover:text-primary transition-colors">
                 Services
               </a>
-              <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
-                About
-              </a>
-              <Button variant="default" className="bg-gradient-primary shadow-neon w-fit">
+              <Button 
+                variant="default" 
+                className="bg-gradient-primary shadow-neon w-fit"
+                onClick={() => window.open('https://instagram.com/damagedvisuals', '_blank')}
+              >
                 Contact
               </Button>
             </div>

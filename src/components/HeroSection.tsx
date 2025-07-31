@@ -1,5 +1,5 @@
 import heroImage from '@/assets/hero-animation.jpg';
-import { Play, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
@@ -43,22 +43,14 @@ const HeroSection = () => {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-6 justify-center animate-fade-in" style={{animationDelay: '0.6s'}}>
+        <div className="flex justify-center animate-fade-in" style={{animationDelay: '0.6s'}}>
           <Button 
             size="lg" 
             className="bg-gradient-primary shadow-neon hover:shadow-glow transition-all duration-300 text-lg px-8 py-6 group"
+            onClick={() => window.open('https://instagram.com/damagedvisuals', '_blank')}
           >
             WORK WITH US!
             <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
-          
-          <Button 
-            size="lg" 
-            variant="outline" 
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-6 group"
-          >
-            <Play className="mr-2 h-5 w-5 group-hover:scale-110 transition-transform" />
-            Watch Reel
           </Button>
         </div>
       </div>

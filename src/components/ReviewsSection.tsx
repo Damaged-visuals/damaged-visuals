@@ -5,27 +5,27 @@ const ReviewsSection = () => {
     {
       name: "FANUM",
       rating: 5,
-      review: "These guys absolutely destroyed it! The brand ad was exactly what we needed to stand out."
+      review: "Super tuff, Ya'll went crazy!"
     },
     {
       name: "KLAW", 
       rating: 5,
-      review: "My stream intro is fire! The quality is insane and my viewers love the animations."
+      review: "That shit f*cking fire , appreciate you!"
     },
     {
       name: "IJW",
       rating: 5,
-      review: "Professional work, fast delivery, and they really understand the vision. Highly recommend!"
+      review: "Brought that vision to lighttttt!"
     },
     {
       name: "FAEGOS",
       rating: 5,
-      review: "The 3D visuals are next level. They completely transformed our content game."
+      review: "That shit is ode fire!"
     },
     {
-      name: "QUAPHA",
+      name: "GO-CRZY",
       rating: 5,
-      review: "Working with Damaged Visuals was smooth from start to finish. Amazing results!"
+      review: "Tooooooo crzyyyyyy!"
     }
   ];
 

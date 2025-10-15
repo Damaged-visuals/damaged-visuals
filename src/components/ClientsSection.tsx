@@ -23,6 +23,13 @@ const ClientsSection = () => {
       thumbnail: "/lovable-uploads/b9d2d453-d8d3-4397-98ed-348c8c033d34.png",
       instagramLink: "https://www.instagram.com/reel/DHf9g9dIjnC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
       isInstagram: true
+    },
+    {
+      title: "FAEGOS ANIMATED SHORT FILM",
+      description: "Cinematic 3D animated short film",
+      thumbnail: "/lovable-uploads/faegos-thumbnail.jpeg",
+      instagramLink: "https://www.instagram.com/reel/DN9KuP9EhRh/?igsh=eGE0ZnBlazI1dmdj",
+      isInstagram: true
     }
   ];
 

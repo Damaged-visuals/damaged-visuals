@@ -13,8 +13,9 @@ const ClientsSection = () => {
     {
       title: "KLAW STREAM INTRO",
       description: "Fast paced animated stream intro for Kyle Lawyer",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
-      isComingSoon: true
+      thumbnail: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
+      instagramLink: "https://www.instagram.com/reel/DNjeYlUodSO/?igsh=MWl3d2w3MXZ3cjhtcA==",
+      isInstagram: true
     },
     {
       title: "GO-CRZY POP-UP AD",
@@ -62,38 +63,23 @@ const ClientsSection = () => {
             >
               {/* Image */}
               <div className="relative overflow-hidden h-64">
-                {client.isComingSoon ? (
-                  <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-4xl font-heading font-black text-primary mb-2">COMING</div>
-                      <div className="text-4xl font-heading font-black text-accent">SOON</div>
-                    </div>
-                  </div>
-                ) : (
-                  <img 
-                    src={client.thumbnail || client.image} 
-                    alt={client.title}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
-                )}
+                <img 
+                  src={client.thumbnail} 
+                  alt={client.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
                 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-500"></div>
                 
-                {/* Play Button or Instagram Link */}
+                {/* Instagram Link */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500">
-                  {client.isInstagram ? (
-                    <div 
-                      className="w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 cursor-pointer"
-                      onClick={() => window.open(client.instagramLink || client.image, '_blank')}
-                    >
-                      <ArrowUpRight className="w-6 h-6 text-primary" />
-                    </div>
-                  ) : !client.isComingSoon && (
-                    <div className="w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                      <Play className="w-6 h-6 text-primary ml-1" />
-                    </div>
-                  )}
+                  <div 
+                    className="w-16 h-16 bg-primary/20 backdrop-blur-sm rounded-full border border-primary/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 cursor-pointer"
+                    onClick={() => window.open(client.instagramLink, '_blank')}
+                  >
+                    <ArrowUpRight className="w-6 h-6 text-primary" />
+                  </div>
                 </div>
               </div>
 

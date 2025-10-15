@@ -13,7 +13,7 @@ const ClientsSection = () => {
     {
       title: "KLAW STREAM INTRO",
       description: "Fast paced animated stream intro for Kyle Lawyer",
-      thumbnail: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&h=600&fit=crop",
+      thumbnail: "/lovable-uploads/klaw-thumbnail.jpeg",
       instagramLink: "https://www.instagram.com/reel/DNjeYlUodSO/?igsh=MWl3d2w3MXZ3cjhtcA==",
       isInstagram: true
     },

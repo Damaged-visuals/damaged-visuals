@@ -17,7 +17,7 @@ const services = [
   },
   {
     icon: Monitor,
-    title: "PRODUCT VISUALIZATION",
+    title: "EVENT & PRODUCTION VISUALIZATION",
     description: "Stunning 3D product renders and animations that showcase your products in their best light.",
     image: abstractMotion
   },
